@@ -1,0 +1,466 @@
+﻿* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Microsoft YaHei';
+}
+
+.main {
+    width: 610px;
+    height: 425px;
+    background-image: url(/Image/bg.png);
+    float: left;
+}
+
+.left {
+    width: 223px;
+    height: 100%;
+    background-image: url(/Image/leftbg.png);
+    float: left;
+}
+
+.self {
+    width: 100%;
+    height: 43px;
+    margin-top: 12px;
+}
+
+.self_pic {
+    width: 43px;
+    height: 43px;
+    float: left;
+    margin-left: 12px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+
+.self_name {
+    width: 100px;
+    float: left;
+    font-size: 14px;
+    color: #c7c7c7;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.left_op {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.left_op_menu {
+    width: 39px;
+    height: 343px;
+    margin-top: 7px;
+    background-image: url(/Image/leftmenubg.png);
+    float: left;
+    padding-top: 10px;
+}
+
+    .left_op_menu li {
+        list-style: none;
+        float: left;
+        width: 30px;
+        height: 30px;
+        margin-top: 10px;
+        margin-left: 4px;
+        padding-left: 5px;
+        width: 25px;
+        padding-top: 5px;
+        height: 25px;
+    }
+
+.left_op_menu_li_selected {
+    background-image: url(/Image/leftbutton.png);
+}
+
+.left_user {
+    width: 184px;
+    float: left;
+}
+
+.searchadd {
+    width: 100%;
+    float: left;
+}
+
+.searchadd_search {
+    width: 150px;
+    height: 19px;
+    float: left;
+    margin-left: 8px;
+    background-image: url(/Image/search.png);
+}
+
+    .searchadd_search input {
+        background-color: transparent;
+        border-width: 0;
+        color: #fff;
+        display: block;
+        font-size: 10px;
+        height: 18px;
+        padding-left: 10px;
+        width: 115px;
+        float: left;
+    }
+
+    .searchadd_search a {
+        display: block;
+        float: left;
+        height: 18px;
+        width: 18px;
+    }
+
+.searchadd_add {
+    width: 17px;
+    height: 17px;
+    margin-top: 1px;
+    margin-left: 4px;
+    float: left;
+}
+
+.team {
+    width: 100%;
+    height: 335px;
+    overflow: auto;
+    overflow-x: hidden;
+    margin-top: 6px;
+    float: left;
+}
+
+.team_item {
+    width: 100%;
+    float: left;
+}
+
+.team_item_info {
+    border-bottom: 1px solid #808080;
+    float: left;
+    height: 30px;
+    margin-left: 10px;
+    width: 164px;
+    cursor: pointer;
+}
+
+    .team_item_info img {
+        display: block;
+        float: left;
+        margin-top: 9px;
+        margin-left: 15px;
+    }
+
+    .team_item_info span {
+        font-size: 12px;
+        color: #ffffff;
+        display: block;
+        float: left;
+        margin-top: 5px;
+        margin-left: 17px;
+    }
+
+.team_user {
+    width: 100%;
+    float: left;
+    display: none;
+}
+
+    .team_user li {
+        list-style: none;
+        height: 25px;
+        cursor: pointer;
+    }
+
+        .team_user li img {
+            display: block;
+            float: left;
+            margin-left: 34px;
+            margin-top: 4px;
+        }
+
+        .team_user li span {
+            font-size: 10px;
+            color: #ffffff;
+            display: block;
+            float: left;
+            margin-top: 5px;
+            margin-left: 7px;
+        }
+
+#GroupListDIV {
+    display: none;
+}
+
+#FoundListDIV {
+    display: none;
+}
+
+.right {
+    width: 367px;
+    height: 425px;
+    float: left;
+}
+
+#talk {
+    width: 314px;
+    height: 100%;
+    background-image: url(/Image/talkbg.png);
+    float: left;
+    position: relative;
+    display: none;
+}
+
+.talk {
+    position: absolute;
+}
+
+    .talk textarea {
+        width: 100%;
+        height: 100%;
+        font-size: 12px;
+        padding: 2px;
+    }
+
+.talk_re_note {
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 304px;
+    height: 230px;
+    background-color: #ffffff;
+    float: left;
+    overflow: auto;
+    overflow-x: hidden;
+    font-size: 12px;
+}
+
+    .talk_re_note li {
+        list-style: none;
+        float: left;
+        padding: 2px;
+        width: 100%;
+    }
+
+.otheruser_note p {
+    color: #7bff3e;
+    text-align: left;
+    font-size: 12px;
+}
+
+.otheruser_note span {
+    color: #424242;
+    text-align: left;
+    font-size: 11px;
+}
+
+
+.curruser_note p {
+    color: #54A6D6;
+    text-align: left;
+    font-size: 12px;
+}
+
+.curruser_note span {
+    color: #424242;
+    text-align: left;
+    font-size: 11px;
+}
+
+.talk_re_note a {
+    margin-left: 10px;
+    color: #54A6D6;
+    text-decoration: underline;
+}
+
+    .talk_re_note a:hover {
+        color: #ff6a00;
+        text-decoration: none;
+    }
+
+.talk_op {
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    float: left;
+    height: 20px;
+}
+
+    .talk_op img {
+        display: block;
+        float: left;
+    }
+
+.talk_note {
+    background-color: #ffffff;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 304px;
+    height: 100px;
+}
+
+.talk_run {
+    float: left;
+    padding-right: 5px;
+    width: 100%;
+}
+
+    .talk_run button {
+        float: right;
+        margin-right: 5px;
+        margin-top: 5px;
+        font-size: 12px;
+    }
+
+.talktab {
+    float: left;
+    width: 53px;
+    height: 100px;
+    padding-top: 50px;
+}
+
+    .talktab li {
+        background-image: url(/Image/tab2.png);
+        background-repeat: no-repeat;
+        padding-left: 6px;
+        padding-top: 5px;
+        height: 22px;
+        width: 46px;
+        float: left;
+        margin-top: 10px;
+        list-style: none;
+        color: #ffffff;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+        .talktab li.talktab_li_selected {
+            background-image: url(/Image/tab1.png);
+            background-repeat: no-repeat;
+            color: #454444;
+        }
+
+#ULLayer {
+    float: right;
+    height: 150px;
+    width: 200px;
+    margin-right: 1px;
+    margin-top: -153px;
+    position: relative;
+    display: none;
+}
+
+.ULLayer {
+    position: absolute;
+    border: 1px solid #808080;
+}
+
+#ULLayer li {
+    float: left;
+    width: 100%;
+    list-style: none;
+}
+
+    #ULLayer li.header {
+        background-color: #ebf2fa;
+        color: #2689dc;
+        height: 25px;
+        line-height: 25px;
+        font-size: 14px;
+        border-bottom: 1px solid #c9c9c9;
+    }
+
+        #ULLayer li.header b {
+            margin-left: 5px;
+            float: left;
+        }
+
+        #ULLayer li.header a {
+            margin-right: 5px;
+            margin-top: 3px;
+            float: right;
+            text-decoration: none;
+            color: #ff6a00;
+            cursor: pointer;
+        }
+
+            #ULLayer li.header a:hover {
+                color: #54A6D6;
+                text-decoration: none;
+                color: #fff;
+            }
+
+    #ULLayer li.footer {
+        background-color: #ebf2fa;
+        height: 25px;
+        line-height: 25px;
+        text-align: right;
+        border-top: 1px solid #c9c9c9;
+    }
+
+        #ULLayer li.footer a {
+            margin-right: 5px;
+            text-decoration: none;
+            font-size: 14px;
+            color: #2689dc;
+            cursor: pointer;
+        }
+
+            #ULLayer li.footer a:hover {
+                color: #54A6D6;
+            }
+
+    #ULLayer li.body {
+        background-color: #ebf2fa;
+        height: 100px;
+        font-size: 12px;
+        line-height: 25px;
+        color: #424242;
+        padding: 0px 3px;
+        width: 194px;
+    }
+
+        #ULLayer li.body span {
+            margin: 3px;
+        }
+
+.warning {
+    color: #fa2020;
+    font-size: 12px;
+    margin-left: 100px;
+    margin-top: 50px;
+    float: left;
+}
+
+.fm_main_menu {
+    height: 52px;
+    width: 100px;
+    border-top: #d2d2d2 1px solid;
+    border-left: #d2d2d2 1px solid;
+    border-right: #d2d2d2 1px solid;
+    font-size: 12px;
+    position: absolute;
+    display: none;
+    z-index: 99;
+}
+
+    .fm_main_menu li {
+        list-style: none;
+        border-bottom: #d2d2d2 1px solid;
+        background-color: #fff;
+        height: 25px;
+    }
+
+        .fm_main_menu li a {
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            padding-left: 25px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            height: 18px;
+            width: 75px;
+        }
+
+            .fm_main_menu li a:hover {
+                background-color: #e9e9e9;
+            }

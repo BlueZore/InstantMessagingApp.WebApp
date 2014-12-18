@@ -1,0 +1,79 @@
+﻿ /*aspnetpage css start*/
+#AspNetPager1_input{
+	font-family: Arial;
+	font-size: 12px;
+	padding-top: 1px;
+	padding-right: 2px;
+	padding-bottom: 1px;
+	margin-bottom: -3px;
+	padding-left: 0px;
+}
+#AspNetPager1_btn{
+	background-color:#0066fe;
+	color:#fff;
+	border:1px #6CC solid;
+	margin-left:5px;     
+	margin-right:10px;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-bottom: -2px;
+	font-family: Arial;
+	font-size: 12px;
+}
+.recordnum
+{
+}
+
+
+.paginator {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	font-size: 12px;
+	color: #06F;
+}
+
+.paginator .cpb {
+	border: 1px solid #CCC;
+	text-decoration: none;
+	padding-top:3px;
+	padding-right:  6px;
+	padding-bottom:3px;
+	padding-left:  6px;
+	color: #FFF;
+	font-size: 12px;
+	font-weight: normal;
+	font-family: Arial;
+	background-color: #06F;
+	_padding-top:2px;
+	*padding-top:2px;
+}
+.paginator a {
+	border: 1px solid #CCC;
+	background: #fff;
+	text-decoration: none;
+	padding-top: 3px;
+	padding-right: 6px;
+	padding-bottom:3px;
+	padding-left:   6px;
+	color: #06F;
+	font-size: 12px;
+	font-weight: normal;
+	font-family: Arial;
+	_padding-top:2px;
+	*padding-top:2px;
+}
+.paginator a:hover{
+	color: #fd6d01;
+	text-decoration: none;
+	background-color: #FFF;
+	border-top-color: #fd6d01;
+	border-right-color: #fd6d01;
+	border-bottom-color: #fd6d01;
+	border-left-color: #fd6d01;
+	font-family: "", ;
+	font-size: 12px;
+	font-weight: normal;
+	
+}
+
+/*aspnetpage css end

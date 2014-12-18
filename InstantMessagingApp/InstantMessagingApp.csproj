@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2DD37E07-7EC4-462B-9248-D5CB0AAF73A3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InstantMessagingApp</RootNamespace>
+    <AssemblyName>InstantMessagingApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNetPager">
+      <HintPath>..\..\DLL\AspNetPager.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJson">
+      <HintPath>..\..\DLL\LitJson.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="XSAT.Lib2014.System">
+      <HintPath>..\IM.BLL\bin\Debug\XSAT.Lib2014.System.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Common\Ajax.asmx" />
+    <Content Include="CSS\AspNetPageStyle.css" />
+    <Content Include="CSS\Style.css" />
+    <Content Include="Iframe\AboutUsDetail.aspx" />
+    <Content Include="Iframe\AboutUsView.aspx" />
+    <Content Include="Iframe\AddGroup.aspx" />
+    <Content Include="Iframe\AddUser.aspx" />
+    <Content Include="Iframe\BaseUserView.aspx" />
+    <Content Include="Iframe\ConfirmGroup.aspx" />
+    <Content Include="Iframe\ConfirmUser.aspx" />
+    <Content Include="Iframe\GroupMemberView.aspx" />
+    <Content Include="Iframe\GroupView.aspx" />
+    <Content Include="Iframe\MoveUser.aspx" />
+    <Content Include="Iframe\NewGroup.aspx" />
+    <Content Include="Iframe\NewTeam.aspx" />
+    <Content Include="Iframe\TalkRecDetail.aspx" />
+    <Content Include="Iframe\TalkRecView.aspx" />
+    <Content Include="Image\close.png" />
+    <Content Include="Image\error.jpg" />
+    <Content Include="Image\leftmenu3.png" />
+    <Content Include="Image\leftmenu4.png" />
+    <Content Include="Image\tab3.png" />
+    <Content Include="Image\upload.png" />
+    <Content Include="Image\userbg.jpg" />
+    <Content Include="JS\IM.js" />
+    <Content Include="JS\jquery-1.11.1.js" />
+    <Content Include="JS\jquery-1.11.1.min.js" />
+    <Content Include="JS\layer\extend\layer.ext.js" />
+    <Content Include="JS\layer\layer.min.js" />
+    <Content Include="JS\layer\skin\default\icon_ext.png" />
+    <Content Include="JS\layer\skin\default\textbg.png" />
+    <Content Include="JS\layer\skin\default\xubox_ico0.png" />
+    <Content Include="JS\layer\skin\default\xubox_loading0.gif" />
+    <Content Include="JS\layer\skin\default\xubox_loading1.gif" />
+    <Content Include="JS\layer\skin\default\xubox_loading2.gif" />
+    <Content Include="JS\layer\skin\default\xubox_loading3.gif" />
+    <Content Include="JS\layer\skin\default\xubox_title0.png" />
+    <Content Include="JS\layer\skin\layer.css" />
+    <Content Include="JS\layer\skin\layer.ext.css" />
+    <Content Include="JS\zTree\demo.css" />
+    <Content Include="JS\zTree\img\diy\1_close.png" />
+    <Content Include="JS\zTree\img\diy\1_open.png" />
+    <Content Include="JS\zTree\img\diy\2.png" />
+    <Content Include="JS\zTree\img\diy\3.png" />
+    <Content Include="JS\zTree\img\diy\4.png" />
+    <Content Include="JS\zTree\img\diy\5.png" />
+    <Content Include="JS\zTree\img\diy\6.png" />
+    <Content Include="JS\zTree\img\diy\7.png" />
+    <Content Include="JS\zTree\img\diy\8.png" />
+    <Content Include="JS\zTree\img\diy\9.png" />
+    <Content Include="JS\zTree\img\line_conn.gif" />
+    <Content Include="JS\zTree\img\loading.gif" />
+    <Content Include="JS\zTree\img\zTreeStandard.gif" />
+    <Content Include="JS\zTree\img\zTreeStandard.png" />
+    <Content Include="JS\zTree\jquery-1.4.4.min.js" />
+    <Content Include="JS\zTree\jquery.ztree.core-3.5.min.js" />
+    <Content Include="JS\zTree\Tree001.js" />
+    <Content Include="JS\zTree\zTreeStyle.css" />
+    <Content Include="JS\uploadify\cancel.png" />
+    <Content Include="JS\uploadify\jquery.uploadify.min.js" />
+    <Content Include="JS\uploadify\swfobject.js" />
+    <Content Include="JS\uploadify\uploadify.css" />
+    <Content Include="JS\uploadify\uploadify.js" />
+    <Content Include="JS\uploadify\uploadify.swf" />
+    <Content Include="Login.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="JS\uploadify\Uploadify 3.2 参数.docx" />
+    <Content Include="Common\UploadHandler.ashx" />
+    <None Include="Scripts\jquery-2.1.1.intellisense.js" />
+    <Content Include="Scripts\jquery-2.1.1.js" />
+    <Content Include="Scripts\jquery-2.1.1.min.js" />
+    <Content Include="Scripts\jquery-2.1.1.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Image\adduser.png" />
+    <Content Include="Image\bg.png" />
+    <Content Include="Image\leftbg.png" />
+    <Content Include="Image\leftbutton.png" />
+    <Content Include="Image\leftmenu1.png" />
+    <Content Include="Image\leftmenu2.png" />
+    <Content Include="Image\leftmenubg.png" />
+    <Content Include="Image\line.png" />
+    <Content Include="Image\sanjian.png" />
+    <Content Include="Image\sanjian2.png" />
+    <Content Include="Image\search.png" />
+    <Content Include="Image\send.png" />
+    <Content Include="Image\tab1.png" />
+    <Content Include="Image\tab2.png" />
+    <Content Include="Image\talkbg.png" />
+    <Content Include="Image\upload1.png" />
+    <Content Include="Image\upload2.png" />
+    <Content Include="Image\userpic.png" />
+    <Content Include="Image\userpic2.png" />
+    <Content Include="Index.aspx" />
+    <Content Include="InitData.aspx" />
+    <Content Include="UpLoadFiles\UserPic\2014111519071258.jpg" />
+    <Content Include="UpLoadFiles\UserPic\2014111519071523.jpg" />
+    <Content Include="UpLoadFiles\UserPic\2014111519075976.jpg" />
+    <Content Include="UpLoadFiles\UserPic\default.jpg" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\Ajax.asmx.cs">
+      <DependentUpon>Ajax.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\BasePager.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\UploadHandler.ashx.cs">
+      <DependentUpon>UploadHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Iframe\AboutUsDetail.aspx.cs">
+      <DependentUpon>AboutUsDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Iframe\AboutUsDetail.aspx.designer.cs">
+      <DependentUpon>AboutUsDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Iframe\AboutUsView.aspx.cs">
+      <DependentUpon>AboutUsView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Iframe\AboutUsView.aspx.designer.cs">
+      <DependentUpon>AboutUsView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Iframe\AddGroup.aspx.cs">
+      <DependentUpon>AddGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Iframe\AddGroup.aspx.designer.cs">
+      <DependentUpon>AddGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Iframe\AddUser.aspx.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Iframe\AddUser.aspx.designer.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Iframe\BaseUserView.aspx.cs">
+      <DependentUpon>BaseUserView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Iframe\BaseUserView.aspx.designer.cs">
+      <DependentUpon>BaseUserView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Iframe\ConfirmGroup.aspx.cs">
+      <DependentUpon>ConfirmGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Iframe\ConfirmGroup.aspx.designer.cs">
+      <DependentUpon>ConfirmGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Iframe\ConfirmUser.aspx.cs">
+      <DependentUpon>ConfirmUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Iframe\ConfirmUser.aspx.designer.cs">
+      <DependentUpon>ConfirmUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Iframe\GroupMemberView.aspx.cs">
+      <DependentUpon>GroupMemberView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Iframe\GroupMemberView.aspx.designer.cs">
+      <DependentUpon>GroupMemberView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Iframe\GroupView.aspx.cs">
+      <DependentUpon>GroupView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Iframe\GroupView.aspx.designer.cs">
+      <DependentUpon>GroupView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Iframe\MoveUser.aspx.cs">
+      <DependentUpon>MoveUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Iframe\MoveUser.aspx.designer.cs">
+      <DependentUpon>MoveUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Iframe\NewGroup.aspx.cs">
+      <DependentUpon>NewGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Iframe\NewGroup.aspx.designer.cs">
+      <DependentUpon>NewGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Iframe\NewTeam.aspx.cs">
+      <DependentUpon>NewTeam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Iframe\NewTeam.aspx.designer.cs">
+      <DependentUpon>NewTeam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Iframe\TalkRecDetail.aspx.cs">
+      <DependentUpon>TalkRecDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Iframe\TalkRecDetail.aspx.designer.cs">
+      <DependentUpon>TalkRecDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Iframe\TalkRecView.aspx.cs">
+      <DependentUpon>TalkRecView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Iframe\TalkRecView.aspx.designer.cs">
+      <DependentUpon>TalkRecView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InitData.aspx.cs">
+      <DependentUpon>InitData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InitData.aspx.designer.cs">
+      <DependentUpon>InitData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UpLoadFiles\Files\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IM.BLL\IM.BLL.csproj">
+      <Project>{502b7766-a0b4-4db9-a11b-b7aa9414fa4d}</Project>
+      <Name>IM.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IM.DAL\IM.DAL.csproj">
+      <Project>{6256bde7-9d3f-4c05-a4f9-579342f219c4}</Project>
+      <Name>IM.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IM.Model\IM.Model.csproj">
+      <Project>{d6c2bf18-1c0f-4b90-a614-cd7731c43b39}</Project>
+      <Name>IM.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>31383</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:31383/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,131 @@
+/*
+Uploadify
+Copyright (c) 2012 Reactive Apps, Ronnie Garcia
+Released under the MIT License <http://www.opensource.org/licenses/mit-license.php> 
+*/
+
+.uploadify {
+    position: relative;
+    margin-bottom: 1em;
+    margin-top: 13px;
+    float: left;
+    display: none;
+    position: fixed;
+    margin-top: 261px;
+    margin-left: 6px;
+}
+
+.uploadify-button {
+    background: url("/Image/upload.png");
+}
+
+.uploadify:hover .uploadify-button {
+}
+
+.uploadify-button.disabled {
+    background-color: #D0D0D0;
+    color: #808080;
+}
+
+.uploadify-queue {
+    margin-bottom: 1em;
+}
+
+.uploadify-queue-item {
+    background-color: #F5F5F5;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font: 11px Verdana, Geneva, sans-serif;
+    margin-top: 5px;
+    max-width: 350px;
+    padding: 10px;
+}
+
+.uploadify-error {
+    background-color: #FDE5DD !important;
+}
+
+.uploadify-queue-item .cancel a {
+    background: url('../img/uploadify-cancel.png') 0 0 no-repeat;
+    float: right;
+    height: 16px;
+    text-indent: -9999px;
+    width: 16px;
+}
+
+.uploadify-queue-item.completed {
+    background-color: #E5E5E5;
+}
+
+.uploadify-progress {
+    background-color: #E5E5E5;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.uploadify-progress-bar {
+    background-color: #0099FF;
+    height: 3px;
+    width: 1px;
+}
+
+.fm_main_queue {
+    bottom: 0;
+    display: none;
+    position: fixed;
+    _position: absolute;
+    right: 0;
+    z-index: 1000;
+    left: auto;
+    top: auto;
+}
+
+.fm_main_queue_head {
+    height: 39px;
+    line-height: 39px;
+    width: 369px;
+    _width: 371px;
+    background: url("../../images/sprite_n1_ccdf642.gif") repeat-x scroll 0 0;
+    font-size: 14px;
+    color: #fff;
+    padding-left: 10px;
+}
+
+    .fm_main_queue_head span {
+        float: left;
+    }
+
+    .fm_main_queue_head a {
+        display: inline-block;
+        float: right;
+        height: 11px;
+        margin-top: 13px;
+        padding-left: 5px;
+        padding-right: 5px;
+        text-decoration: none;
+        width: 11px;
+        cursor: pointer;
+        _margin-right: 5px;
+    }
+
+a.fm_main_queue_head_min {
+    background: url("../../images/amin.png") no-repeat;
+}
+
+a.fm_main_queue_head_max {
+    background: url("../../images/amax.png") no-repeat;
+    display: none;
+}
+
+a.fm_main_queue_head_close {
+    background: url("../../images/aclose.png") no-repeat;
+}
+
+#uploadfileQueue {
+    border: 1px solid #3683db;
+    padding: 3px;
+    width: 371px;
+    display: none;
+    background-color: #fff;
+}
